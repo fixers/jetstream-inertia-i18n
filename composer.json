@@ -1,0 +1,30 @@
+{
+    "name": "fixers/jetstream-inertia-i18n",
+    "description": "An implementation of translatable Vue components for Laravel Jetstream with the Inertia stack",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Fixers\\JetstreamI18n\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dan Storm",
+            "email": "hello@danstorm.dev"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^10.25"
+    },
+    "extra": {
+        "php": "^8.1.0",
+        "ext-json": "*",
+        "laravel": {
+            "providers": [
+                "Fixers\\JetstreamI18n\\Providers\\TranslatableServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
